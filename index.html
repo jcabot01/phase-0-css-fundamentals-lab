@@ -3,64 +3,142 @@
   <head>
     <meta charset="UTF-8">
     <title>Exceptional Realty Group - Luxury Homes - About</title>
-    <!-- Don't forget to link your CSS file! -->
+    <link rel="stylesheets" href="./style.css">
   </head>
+
+  <style>
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    padding-left: 37px;
+    padding-bottom: 5px;
+
+  }
+
+  a {
+    background-color: transparent;  
+  }
+  
+  nav {
+    text-align: center;
+  }
+  #about, #new-properties, #Listings, #market-report, #Contact, #HUD {
+    background-color: gainsboro;
+  }
+ 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: smaller;
+  }
+
+  #description {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: x-small;
+  }
+  #fbox1 {
+  	background-color: #ea2f2f;
+	  width: 25%;
+	  height: 150px;
+	  position: inline-block;
+	  float: left;
+    text-align: center;
+  }
+
+  #fbox2 {
+	  background-color: #ea2f2f;
+	  width: 25%;
+	  height: 150px;
+	  position: inline-block;
+	  float: left;
+    text-align: center;
+  }
+
+  #fbox3 {
+	  background-color: #ea2f2f;
+	  width: 25%;
+	  height: 150px;
+	  position: inline-block;
+	  float: left;
+    text-align: center;
+  }
+
+  #fbox4 {
+	  background-color: #ea2f2f;
+	  width: 25%;
+	  height: 150px;
+	  position: inline-block;
+	  float: left;
+    text-align: center;
+  }
+  </style>
   <body>
     <header>
       <!-- logo -->
       <h1>Exceptional Realty Group</h1>
 
       <nav>
-        <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings.html">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
-      </nav>
+          <a id="about" href="index.html">About</a> <a id="new-properties" href="new-properties.html">New Properties</a> <a id="Listings" href="real-estate-listings.html">Listings</a> <a id="market-report" href="market-report.html">Market Report</a> <a id="Contact" href="contact.html">Contact</a> <a id="HUD" href="http://hud.gov" target="_blank">HUD</a      </nav>
     </header>
 
     <section id="featured-property">
       <figure>
-        <img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group">
+        <img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group" class="center">
         <figcaption>345 Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards.</figcaption>
       </figure>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis nisi nihil debitis aspernatur doloribus quam eveniet quibusdam tempora esse! Repudiandae, assumenda, debitis doloribus ea eius ab at quae totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, inventore aliquid ipsam debitis nulla vitae omnis nemo quisquam? Obcaecati dolor ipsum distinctio reprehenderit aliquid autem ea vel provident voluptas nisi.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus, nobis, tempore recusandae culpa deleniti dignissimos laborum perspiciatis exercitationem obcaecati dolores unde eveniet eius debitis perferendis provident porro. Ipsum, placeat.</p>
+      <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis nisi nihil debitis aspernatur doloribus quam eveniet quibusdam tempora esse! Repudiandae, assumenda, debitis doloribus ea eius ab at quae totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, inventore aliquid ipsam debitis nulla vitae omnis nemo quisquam? Obcaecati dolor ipsum distinctio reprehenderit aliquid autem ea vel provident voluptas nisi.</p>
+      <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus, nobis, tempore recusandae culpa deleniti dignissimos laborum perspiciatis exercitationem obcaecati dolores unde eveniet eius debitis perferendis provident porro. Ipsum, placeat.</p>
     </section>
 
-    <section id="details">
-      <div>
+    <footer class="footer"> 
+      <div id="fbox1">
         <h3>Contact</h3>
-        <p>
-          <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
-          +1 710 555 1234<br>
-          @fakeRealty
-        </p>
+        <ul style="list-style: none;">
+         <li id="mailto"><a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a></li>
+         <li>+1 710 555 1234</li>
+         <li>@fakeRealty</li>          
+        </ul>
       </div>
+
       
-      <div>
+      <div id="fbox2">
         <h3>Correspondence</h3>
-        <p>
-          Exceptional Realty<br>
-          P.O. Box 5555<br>
-          Brooklyn, NY 11201
-        </p>
+        <ul style="list-style: none;">
+            <li>Exceptional Realty</li>
+            <li>P.O. Box 5555</li>
+            <li>Brooklyn, NY 11201</li>
+          </ul>
       </div>
 
-      <div>
-        <h3>Links</h3>
-        <p>
-          <a href="#" target="_blank">Home Restoration</a><br>
-          <a href="#" target="_blank">Affordable Mortgages</a><br>
-          <a href="#" target="_blank">Professional Moving Crew</a>
-        </p>
+      
+      <div id="fbox3">
+         <h3>Links</h3>
+         <ul style="list-style: none;">
+            <li><a href="#" target="_blank">Home Restoration</a></li>
+            <li><a href="#" target="_blank">Affordable Mortgages</a></li>
+            <li><a href="#" target="_blank">Professional Moving Crew</a></li>          
+          </ul>
       </div>
+    
 
-      <div>
+      <div id="fbox4">
         <h3>Follow</h3>
-        <p>
-          <a href="#" target="_blank">YouTube</a><br>
-          <a href="#" target="_blank">Facebook</a><br>
-          <a href="#" target="_blank">Twitter</a>
-        </p>
+        <ul style="list-style: none;">
+          <li><a href="#" target="_blank">YouTube</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Twitter</a></li>       
+         </ul>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
